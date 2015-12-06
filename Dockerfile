@@ -16,3 +16,4 @@ RUN git clone https://github.com/rezoo/illustration2vec.git
 #wget is necessary to download the models
 RUN apt-get install -y wget
 RUN cd illustration2vec && ./get_models.sh
+WORKDIR /illustration2vec
